@@ -2,7 +2,7 @@
   <div class="w-fit mx-auto mt-10">
     <div class="relative">
 <img crossorigin="anonymous" ref="image" src="https://previews.123rf.com/images/mimagephotography/mimagephotography1507/mimagephotography150700379/42743510-full-body-portrait-of-a-fit-man-running-outdoors.jpg" alt="" class="w-[600px] relative">
-<Keypoint v-for="keypoint in keypoints[0][0]" :point="keypoint" :height="image.height" v-if="keypoints.length > 0"></Keypoint>
+<Keypoint v-for="keypoint in keypoints[0][0]" :point="keypoint" :width="image.width" :height="image.height" v-if="keypoints.length > 0"></Keypoint>
 </div>
 <button @click="estimate" class="bg-black text-white px-4 py-2 rounded-lg mt-4">Estimate</button>
 <button @click="changeImage" class="mx-4 bg-black text-white px-4 py-2 rounded-lg mt-4">Image Url</button>
