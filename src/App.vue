@@ -11,6 +11,7 @@
 </template>
 
 <script setup>
+import * as tf from '@tensorflow/tfjs';
 import { ref } from "vue";
 import model from "./model.js"
 import Keypoint from "./components/keypoint"
